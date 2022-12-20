@@ -1,4 +1,4 @@
-const Employee = require("./lib/Employee")
+const Employee = require("../lib/Employee")
 
 describe("Employee", () => {
   // test description saying this should test if constructor creates and object
@@ -34,7 +34,14 @@ describe("Employee", () => {
 
    //test for email next
 it("should accept an email argument", () => {
-   
+    exampleEmail = "coulsonp@icloud.com"
+ 
+    // new Employee instance with placeholder for name parameter for name then example id for id parameter
+    //each successive test will require that place holders be present for other existing parameters in
+    //you classes - so when you test for email the instance should be new Employee("Coulson", "123", exampleEmail)
+    const result = new Employee("Coulson", '123', exampleEmail)
+    // We expect 'result' type to be and empty object
+    expect(result.email).toEqual(exampleEmail);
 //stuff
    });
 
@@ -46,5 +53,21 @@ it("should accept an email argument", () => {
      const result = new Employee(exampleName)
   //insert method
      expect(result.getName()).toEqual(exampleName);
+   });
+   it("getId() should return Id", () => {
+   
+    exampleId = "123"
+ 
+     const result = new Employee('Coulson', exampleId)
+  //insert method
+     expect(result.getId()).toEqual(exampleId);
+   });
+   it("getEmail() should return Email", () => {
+   
+    exampleEmail = "123"
+ 
+     const result = new Employee('Coulson', '123', exampleEmail)
+  //insert method
+     expect(result.getEmail()).toEqual(exampleEmail);
    });
 });
