@@ -2,34 +2,10 @@ body {
     background-color: #7A7D7D
 }
 
-.heading{
-    background-color: #fefae0
-}
 
-.toptext {
-    color: #283618;
+h1 {
+    color: #FFFBFE
     
-}
-
-.card {
-    border: none;
-    border-radius: 10px
-}
-
-.c-details span {
-    font-weight: 300;
-    font-size: 13px
-}
-
-.icon {
-    width: 50px;
-    height: 50px;
-    background-color: #eee;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 39px
 }
 
 .badge span {
@@ -42,22 +18,4 @@ body {
     color: #dda15e;
     justify-content: center;
     align-items: center
-}
-
-.progress {
-    height: 10px;
-    border-radius: 10px
-}
-
-.progress div {
-    background-color: red
-}
-
-.text1 {
-    font-size: 14px;
-    font-weight: 600
-}
-
-.text2 {
-    color: #a5aec0
 }

@@ -10,9 +10,9 @@ function managerCard(employee) {
   <div class="card-body">
     <h5 class="card-title">${employee.getRole()}</h5>
     <p class="badge"> <span>${employee.getName()}</span> </p>
-    <a href="#" class="btn btn-primary">${employee.getid()}</a>
-    <a href="#" class="btn btn-primary">${employee.getEmail()}</a>
-    <a href="#" class="btn btn-primary">${employee.getofficeNumber()}</a>
+    <p href="#" class="managerID">Employee ID:${employee.getid()}</p>
+    <a href="mailto:${employee.getEmail()}" class="managerEmail">Email:${employee.getEmail()}</a>
+    <p href="#" class="managerSchool">Office Number:${employee.getofficeNumber()}</p>
   </div>
 </div>
     `
@@ -23,9 +23,9 @@ function EngineerCard(employee) {
   <div class="card-body">
     <h5 class="card-title">${employee.getRole()}</h5>
     <p class="badge"><span>${employee.getName()}</span> </p>
-    <a href="#" class="btn btn-primary">${employee.getid()}</a>
-    <a href="mailto:${employee.getEmail()}" class="btn btn-primary">${employee.getEmail()}</a>
-    <a href="#" class="btn btn-primary">${employee.getGithub()}</a>
+    <p href="#" class="engineerID">Employee ID:${employee.getid()}</p>
+    <a href="mailto:${employee.getEmail()}" class="engineerEmail">Email:${employee.getEmail()}</a>
+    <p href="#" class="engineerSchool">Github:${employee.getGithub()}</p>
   </div>
 </div>
     `
@@ -36,9 +36,9 @@ function InternCard(employee) {
   <div class="card-body">
     <h5 class="card-title">${employee.getRole()}</h5>
     <p class="badge"><span>${employee.getName()}</span> </p>
-    <a href="#" class="btn btn-primary">${employee.getid()}</a>
-    <a href="#" class="btn btn-primary">${employee.getEmail()}</a>
-    <a href="#" class="btn btn-primary">${employee.getSchool()}</a>
+    <p href="#" class="internID">Employee ID:${employee.getid()}</p>
+    <a href="mailto:${employee.getEmail()}" class="internEmail">Email:${employee.getEmail()}</a>
+    <p href="#" class="internSchool">School:"${employee.getSchool()}</p>
   </div>
 </div>
     `
