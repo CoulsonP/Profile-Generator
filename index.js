@@ -3,6 +3,7 @@ const Intern = require("./lib/Intern")
 const Engineer = require("./lib/Engineer")
 const fs = require("fs")
 const inquirer = require("inquirer")
+const generateHtml = require("./source/generatehtml")
 const teamArray = []
 
 // const coulson = new Engineer("name", 1, "cporte@gmail.com", "CoulsonP")
@@ -140,6 +141,7 @@ const teamArray = []
               break;
             default:
               console.log("Team Html Created")
+              fs.writeFileSync("./dist/index.html", generateHtml(teamArray))
           }
         });
     }}
