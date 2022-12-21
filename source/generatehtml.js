@@ -9,7 +9,8 @@ function managerCard(employee) {
     <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">${employee.getRole()}</h5>
-    <p class="card-text">${employee.getName()}</p>
+    <p class="badge"> <span>${employee.getName()}</span> </p>
+    <a href="#" class="btn btn-primary">${employee.getid()}</a>
     <a href="#" class="btn btn-primary">${employee.getEmail()}</a>
     <a href="#" class="btn btn-primary">${employee.getofficeNumber()}</a>
   </div>
@@ -21,7 +22,8 @@ function EngineerCard(employee) {
     <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">${employee.getRole()}</h5>
-    <p class="card-text">${employee.getName()}</p>
+    <p class="badge"><span>${employee.getName()}</span> </p>
+    <a href="#" class="btn btn-primary">${employee.getid()}</a>
     <a href="mailto:${employee.getEmail()}" class="btn btn-primary">${employee.getEmail()}</a>
     <a href="#" class="btn btn-primary">${employee.getGithub()}</a>
   </div>
@@ -33,7 +35,8 @@ function InternCard(employee) {
     <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">${employee.getRole()}</h5>
-    <p class="card-text">${employee.getName()}</p>
+    <p class="badge"><span>${employee.getName()}</span> </p>
+    <a href="#" class="btn btn-primary">${employee.getid()}</a>
     <a href="#" class="btn btn-primary">${employee.getEmail()}</a>
     <a href="#" class="btn btn-primary">${employee.getSchool()}</a>
   </div>
@@ -86,7 +89,7 @@ module.exports = teamArray => {
   </head>
 
   <body>
-
+<h1>My Team</h1>
   ${employeeCards(teamArray)}
   </body>
 </html>

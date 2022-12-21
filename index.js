@@ -6,8 +6,7 @@ const inquirer = require("inquirer")
 const generateHtml = require("./source/generatehtml")
 const teamArray = []
 
-// const coulson = new Engineer("name", 1, "cporte@gmail.com", "CoulsonP")
-// console.log(coulson)
+
 
     function createManager() {
       inquirer
@@ -15,28 +14,28 @@ const teamArray = []
           {
             type: 'input',
             name: 'managerName',
-            message: "What is the team manager's name?",
+            message: "What is the team Manager's name?",
           },
           {
             type: 'input',
-            name: 'managerId',
-            message: "What is the team manager's id?",
+            name: 'managerid',
+            message: "What is the team Manager's id?",
           },
           {
             type: 'input',
             name: 'managerEmail',
-            message: "What is the team manager's email?",
+            message: "What is the team Manager's email?",
           },
           {
             type: 'input',
             name: 'managerOfficeNumber',
-            message: "What is the team manager's office number?",
+            message: "What is the team Manager's office number?",
           },
         ])
         .then((answers) => {
           const manager = new Manager(
             answers.managerName,
-            answers.managerId,
+            answers.managerid,
             answers.managerEmail,
             answers.managerOfficeNumber
           );
@@ -54,7 +53,7 @@ const teamArray = []
                 },
                 {
                   type: 'input',
-                  name: 'EngineerId',
+                  name: 'Engineerid',
                   message: "What is the Engineer's id?",
                 },
                 {
@@ -71,7 +70,7 @@ const teamArray = []
               .then((answers) => {
                 const engineer = new Engineer(
                   answers.EngineerName,
-                  answers.EngineerId,
+                  answers.Engineerid,
                   answers.EngineerEmail,
                   answers.github
                 );
@@ -86,17 +85,17 @@ const teamArray = []
                     {
                       type: 'input',
                       name: 'InternName',
-                      message: "What is the team manager's name?",
+                      message: "What is the team Intern's name?",
                     },
                     {
                       type: 'input',
-                      name: 'InternId',
-                      message: "What is the team manager's id?",
+                      name: 'Internid',
+                      message: "What is the team Intern's id?",
                     },
                     {
                       type: 'input',
                       name: 'InternEmail',
-                      message: "What is the team manager's email?",
+                      message: "What is the team Intern's email?",
                     },
                     {
                       type: 'input',
@@ -107,7 +106,7 @@ const teamArray = []
                   .then((answers) => {
                     const intern = new Intern(
                       answers.InternName,
-                      answers.InternId,
+                      answers.Internid,
                       answers.InternEmail,
                       answers.school
                     );
