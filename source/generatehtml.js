@@ -26,7 +26,7 @@ function EngineerCard(employee) {
     <p class="badge"><span>${employee.getName()}</span> </p>
     <p href="#" class="engineerID">Employee ID:${employee.getid()}</p>
     <a href="mailto:${employee.getEmail()}" class="engineerEmail">Email:${employee.getEmail()}</a>
-    <p href="#" class="engineerSchool">Github: <a href="https://github.com/${employee.getGithub()}">${employee.getGithub()}</a></p>
+    <p class="engineerSchool">Github: <a href="https://github.com/${employee.getgithub()}">${employee.getgithub()}</a></p>
   </div>
 </div>
     `
