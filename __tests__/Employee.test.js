@@ -22,14 +22,14 @@ describe("Employee", () => {
 
   it("should accept an id argument", () => {
    
-    exampleId = "123"
+    exampleid = "123"
  
      // new Employee instance with placeholder for name parameter for name then example id for id parameter
      //each successive test will require that place holders be present for other existing parameters in
      //you classes - so when you test for email the instance should be new Employee("Coulson", "123", exampleEmail)
-     const result = new Employee("Coulson", exampleId)
+     const result = new Employee("Coulson", exampleid)
      // We expect 'result' type to be and empty object
-     expect(result.id).toEqual(exampleId);
+     expect(result.id).toEqual(exampleid);
    });
 
    //test for email next
@@ -56,11 +56,11 @@ it("should accept an email argument", () => {
    });
    it("getId() should return Id", () => {
    
-    exampleId = "123"
+    exampleid = "123"
  
-     const result = new Employee('Coulson', exampleId)
+     const result = new Employee('Coulson', exampleid)
   //insert method
-     expect(result.getId()).toEqual(exampleId);
+     expect(result.getid()).toEqual(exampleid);
    });
    it("getEmail() should return Email", () => {
    
