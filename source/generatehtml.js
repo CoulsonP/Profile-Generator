@@ -3,7 +3,7 @@ const Engineer = require("../lib/Engineer")
 
 function employeeCards(teamArray) {
 let newArray = []
-
+// manager card
 function managerCard(employee) {
     return `
     <div class="card" style="width: 18rem;">
@@ -17,6 +17,7 @@ function managerCard(employee) {
 </div>
     `
 }
+// engineer card 
 function EngineerCard(employee) {
     return `
     <div class="card" style="width: 18rem;">
@@ -30,6 +31,7 @@ function EngineerCard(employee) {
 </div>
     `
 }
+// intern card
 function InternCard(employee) {
     return `
     <div class="card" style="width: 18rem;">
@@ -43,8 +45,6 @@ function InternCard(employee) {
 </div>
     `
 }
-
-
 
 
 teamArray.forEach(function(employee){
